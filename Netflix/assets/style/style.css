@@ -1,0 +1,174 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+  }
+  
+  header .logo {
+    margin-left: 5px;
+    fill: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    width: 100px;
+  }
+  
+  header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right:  10px;
+  }
+  
+  header nav a:hover {
+    color: #FFF;
+  }
+  
+  /* ==== FILME PRINCIPAL ==== */
+  .capa-principal {
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) 100%), url('/assets/img/capa.jpg') no-repeat;
+  }
+  
+  .serie-principal {
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) 100%), url('/assets/img/capa3.jpg') no-repeat;
+  }
+  
+  .filme-principal {
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) 100%), url('/assets/img/capa2.png') no-repeat;
+  }
+  
+  .documentario-principal {
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) 100%), url('/assets/img/capa1.jpg') no-repeat;
+  }
+  
+  .capa-principal,
+  .documentario-principal,
+  .serie-principal,
+  .filme-principal {
+    font-size: 16px;
+   
+    height: 600px;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  
+  .capa-principal .description,
+  .documentario-principal .description,
+  .serie-principal .description,
+  .filme-principal .description  
+   {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .capa-principal .title,
+  .documentario-principal .title,
+  .serie-principal .title,
+  .filme-principal .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(42,43,46, 0.8);
+    border: none;
+    color: white;
+  
+    padding:  15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+  
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+  }
+  
+  .button i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .container {
+    margin: 0 20px;
+  }
+  
+  .capa-principal .container,
+  .documentario-principal .container,
+  .serie-principal .container,
+  .filme-principal .container
+   {
+    width: 70%;
+  }
+  
+  .box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  
+  .carrosel-filmes {
+    margin-top: 5px;
+  }
+  
+  .owl-theme .owl-nav {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .owl-theme .owl-dots {
+    display: none;
+  }
+  .owl-nav {
+    margin-top: 0 !important;
+  }
+  
+  .owl-theme .owl-nav [class*="owl-"] {
+    margin: 0 !important;
+    width: 2rem;
+   
+  }
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: #000;
+  }
+  
+  .owl-theme .owl-nav .owl-prev span,
+  .owl-theme .owl-nav .owl-next span{
+    font-size: 50px;
+    color: #fff;
+  }
